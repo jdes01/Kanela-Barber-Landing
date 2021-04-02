@@ -53,7 +53,7 @@ $color-md-dark: #0f0f0f;
 $color-gray: #333232;
 $color-gray-lite: #6d6b6b;
 $color-graytrans: rgba(77, 76, 76, 0.9);
-$color-gold: #fcc81f;
+$color-gold: #a3810f;
 /*====================================================
 ----------------------MIXINS------------------------
 ==================================================*/
@@ -271,6 +271,71 @@ header {
           }
         }
       }
+    }
+  }
+}
+
+/*=========================================================
+-------------------------JUMBOTRON-------------------------
+=========================================================*/
+
+.jumbotron {
+  width: 100vw;
+  height: calc(100vh - 10rem);
+  //border: 1px solid red;
+
+  .jumbo-title {
+    margin-top: 7rem;
+    font-family: $secondary-font;
+    font-size: 2.75rem;
+  }
+
+  .jumbo-subtitle {
+    margin-top: 1rem;
+    font-family: $quaternary-font;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .line {
+      width: 2.75rem;
+      height: 0.2rem;
+      margin: 0 0.75rem;
+      background-color: $color-gold;
+    }
+
+    h2 {
+      font-size: 2.75rem;
+    }
+  }
+
+  .jumbo-cta {
+    width: 100%;
+    height: 8rem;
+    margin-top: 3rem;
+    //border: 2px solid red;
+    @include flex-center;
+
+    .cta-btn {
+      text-decoration: none;
+      font-family: $tertiary-font;
+      font-size: 3rem;
+      color: $color-gold;
+      border: 0.2rem solid $color-gold;
+      padding: 1rem 2rem;
+    }
+  }
+
+  .jumbo-img {
+    width: 100%;
+    height: 45%;
+    margin-top: 3rem;
+    //border: 2px solid blue;
+
+    img {
+      @include keep-it-hundo;
+      object-fit: contain;
     }
   }
 }

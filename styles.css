@@ -64,7 +64,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-family: "agency-reg", sans-serif;
-  color: #fcc81f;
+  color: #a3810f;
   background-color: #050505;
 }
 
@@ -106,7 +106,7 @@ header .header-box1 .logo {
 }
 
 header .header-box1 .logo a {
-  color: #fcc81f;
+  color: #a3810f;
   text-decoration: none;
 }
 
@@ -140,7 +140,7 @@ header .header-box1 .icons li {
 }
 
 header .header-box1 .icons li a {
-  color: #fcc81f;
+  color: #a3810f;
 }
 
 header .header-box1 .icons li a i {
@@ -155,7 +155,7 @@ header .header-box2 {
 header .header-box2 .nav-main {
   width: 100%;
   height: 100%;
-  background-color: #fcc81f;
+  background-color: #a3810f;
 }
 
 header .header-box2 .nav-main .ul-main {
@@ -184,4 +184,81 @@ header .header-box2 .nav-main .ul-main .li-main .links {
   font-size: 2.2rem;
   color: #050505;
   font-family: "agency-bold", sans-serif;
+}
+
+/*=========================================================
+-------------------------JUMBOTRON-------------------------
+=========================================================*/
+.jumbotron {
+  width: 100vw;
+  height: calc(100vh - 10rem);
+}
+
+.jumbotron .jumbo-title {
+  margin-top: 7rem;
+  font-family: "tw-cent", sans-serif;
+  font-size: 2.75rem;
+}
+
+.jumbotron .jumbo-subtitle {
+  margin-top: 1rem;
+  font-family: "kunstler", sans-serif;
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.jumbotron .jumbo-subtitle .line {
+  width: 2.75rem;
+  height: 0.2rem;
+  margin: 0 0.75rem;
+  background-color: #a3810f;
+}
+
+.jumbotron .jumbo-subtitle h2 {
+  font-size: 2.75rem;
+}
+
+.jumbotron .jumbo-cta {
+  width: 100%;
+  height: 8rem;
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jumbotron .jumbo-cta .cta-btn {
+  text-decoration: none;
+  font-family: "agency-bold", sans-serif;
+  font-size: 3rem;
+  color: #a3810f;
+  border: 0.2rem solid #a3810f;
+  padding: 1rem 2rem;
+}
+
+.jumbotron .jumbo-img {
+  width: 100%;
+  height: 45%;
+  margin-top: 3rem;
+}
+
+.jumbotron .jumbo-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
