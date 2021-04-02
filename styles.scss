@@ -53,7 +53,7 @@ $color-md-dark: #0f0f0f;
 $color-gray: #333232;
 $color-gray-lite: #6d6b6b;
 $color-graytrans: rgba(77, 76, 76, 0.9);
-$color-gold: #a3810f;
+$color-gold: #c7af61;
 /*====================================================
 ----------------------MIXINS------------------------
 ==================================================*/
@@ -386,8 +386,7 @@ header {
   .jumbo-img {
     width: 100%;
     height: 40%;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
+    margin: 5rem auto 3rem;
 
     img {
       @include keep-it-hundo;
@@ -405,8 +404,13 @@ main {
   height: auto;
   //border: 1px solid green;
 
+  //---------STYLING FOR ALL SECTIONS-----------
+
   .sections {
     width: 100%;
+    margin-bottom: 5rem;
+
+    //---------STYLING FOR ALL TITLES-----------
 
     .section-title {
       width: 100%;
@@ -419,6 +423,8 @@ main {
     }
   }
 
+  //----------------SECTION 1 / CUTS----------------
+
   .cuts {
     width: 100%;
     height: 60rem;
@@ -429,6 +435,8 @@ main {
     background-position: center;
   }
 
+  //----------------SECTION 2 / GALLERY----------------
+
   .gallery {
     width: 100%;
     height: auto;
@@ -436,12 +444,10 @@ main {
     background-size: 85% auto;
     background-repeat: no-repeat;
     background-position: center;
-    border: 1px solid green;
 
     .img-container {
       width: 100%;
       height: calc(100% - 9rem);
-      //border: 1px solid red;
 
       .imgs {
         width: 27rem;
@@ -455,4 +461,99 @@ main {
       }
     }
   }
+
+  //----------------SECTION 3 / CONTACT----------------
+
+  .contact {
+    width: 100%;
+    height: 55rem;
+    background-image: url(./images/email.png);
+    background-size: 85% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    //border: 1px solid green;
+
+    .info-container {
+      width: 100%;
+      height: calc(100% - 9rem);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .info {
+        width: 100%;
+        height: 50%;
+        font-size: 2rem;
+        text-transform: capitalize;
+        @include flex-center;
+      }
+
+      .info-btn-box {
+        width: 100%;
+        height: 6rem;
+        @include flex-center;
+
+        .info-btn {
+          text-decoration: none;
+          font-size: 3rem;
+          color: $color-dark;
+          background-color: $color-gold;
+          font-family: $tertiary-font;
+          padding: 1rem 2rem;
+          @include transit3;
+
+          &:hover {
+            transform: translateY(-8%);
+            -webkit-transform: translateY(-8%);
+            -moz-transform: translateY(-8%);
+            -ms-transform: translateY(-8%);
+            -o-transform: translateY(-8%);
+          }
+        }
+      }
+    }
+  }
+
+  //----------------SECTION 4 / LOCATION----------------
+
+  .location {
+    width: 100%;
+    height: 50rem;
+    background-image: url(./images/gps.png);
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .locate-container {
+      width: 100%;
+      height: calc(100% - 9rem);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .locate {
+        width: 100%;
+        height: 50%;
+        font-size: 2rem;
+        text-transform: capitalize;
+        @include flex-center;
+      }
+
+      .locate-img {
+        width: 100%;
+        height: 20rem;
+
+        img {
+          @include keep-it-hundo;
+          object-fit: cover;
+        }
+      }
+    }
+  }
 }
+
+/*=========================================================
+--------------------------FOOTER---------------------------
+=========================================================*/
