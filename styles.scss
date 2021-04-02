@@ -402,6 +402,7 @@ header {
 main {
   width: 100%;
   height: auto;
+  margin-top: 5rem;
   //border: 1px solid green;
 
   //---------STYLING FOR ALL SECTIONS-----------
@@ -428,7 +429,7 @@ main {
   .cuts {
     width: 100%;
     height: 60rem;
-    border: 1px dotted red;
+    //border: 1px dotted red;
     background-image: url(./images/profile2.png);
     background-size: 80% auto;
     background-repeat: no-repeat;
@@ -543,17 +544,47 @@ main {
 
       .locate-img {
         width: 100%;
-        height: 20rem;
+        height: 15rem;
+        border: 0.2rem dotted $color-gold;
+        overflow: hidden;
 
         img {
           @include keep-it-hundo;
           object-fit: cover;
+          @include transit3;
+
+          &:hover {
+            transform: scale(1.3);
+            -webkit-transform: scale(1.3);
+            -moz-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+            -o-transform: scale(1.3);
+          }
         }
       }
     }
   }
 }
 
+//----------------HR STYLING----------------
+
+hr {
+  width: 80%;
+  height: 0.2rem;
+  margin: 2rem auto;
+  background-color: $color-gold;
+  border: 0.1rem solid $color-gold;
+}
+
 /*=========================================================
 --------------------------FOOTER---------------------------
 =========================================================*/
+
+footer {
+  width: 100%;
+  height: 10rem;
+  padding: 1rem;
+  @include flex-center;
+  font-size: 1.5rem;
+  font-family: $secondary-font;
+}

@@ -359,6 +359,7 @@ header .header-box2 .nav-main .ul-main .li-main .links:hover::after {
 main {
   width: 100%;
   height: auto;
+  margin-top: 5rem;
 }
 
 main .sections {
@@ -387,7 +388,6 @@ main .sections .section-title {
 main .cuts {
   width: 100%;
   height: 60rem;
-  border: 1px dotted red;
   background-image: url(./images/profile2.png);
   background-size: 80% auto;
   background-repeat: no-repeat;
@@ -541,7 +541,9 @@ main .location .locate-container .locate {
 
 main .location .locate-container .locate-img {
   width: 100%;
-  height: 20rem;
+  height: 15rem;
+  border: 0.2rem dotted #c7af61;
+  overflow: hidden;
 }
 
 main .location .locate-container .locate-img img {
@@ -549,8 +551,45 @@ main .location .locate-container .locate-img img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+main .location .locate-container .locate-img img:hover {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+
+hr {
+  width: 80%;
+  height: 0.2rem;
+  margin: 2rem auto;
+  background-color: #c7af61;
+  border: 0.1rem solid #c7af61;
 }
 
 /*=========================================================
 --------------------------FOOTER---------------------------
 =========================================================*/
+footer {
+  width: 100%;
+  height: 10rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  font-family: "tw-cent", sans-serif;
+}
