@@ -1,14 +1,38 @@
 /*=========================================================
 ===========================================================
 
-PROJECT: BEAST LEAGUE APPAREL 2021
+PROJECT: BIEN CHIDO CUTZ 2021
 
-NOTES: E-COMMERCE PROJECT USING HTML5, CSS3, SCSS & JS
+NOTES: LANDING PAGE PROJECT USING HTML5, CSS3, SCSS
 
-WEBSITE: WWW.BEASTLEAGUEAPPAREL.COM
+WEBSITE: WWW.BIENCHIDOCUTZ.COM
 
 ===========================================================
 =========================================================*/
+
+/*=========================================================
+--------------------------IMPORTS--------------------------
+=========================================================*/
+
+@font-face {
+  font-family: "agency-reg";
+  src: url(./fonts/AGENCYR.TTF);
+}
+
+@font-face {
+  font-family: "agency-bold";
+  src: url(./fonts/AGENCYB.TTF);
+}
+
+@font-face {
+  font-family: "kunstler";
+  src: url(./fonts/KUNSTLER.TTF);
+}
+
+@font-face {
+  font-family: "tw-cent";
+  src: url(./fonts/TCM_____.TTF);
+}
 
 /*=========================================================
 -------------------------VARIABLES-------------------------
@@ -16,27 +40,24 @@ WEBSITE: WWW.BEASTLEAGUEAPPAREL.COM
 
 //---------FONTS-----------
 
-$primary-font: "Kumbh Sans", sans-serif;
-//$secondary-font:
+$primary-font: "agency-reg", sans-serif;
+$secondary-font: "tw-cent", sans-serif;
+$tertiary-font: "agency-bold", sans-serif;
+$quaternary-font: "kunstler", sans-serif;
 
 //--------COLORS------------
 
 $color-lite: #faf5f5;
 $color-dark: #050505;
 $color-md-dark: #0f0f0f;
-$color-cyan: #00ffff;
 $color-gray: #333232;
 $color-gray-lite: #6d6b6b;
 $color-graytrans: rgba(77, 76, 76, 0.9);
-$color-orange: rgb(252, 186, 44);
-$color-orange-dark: rgb(214, 149, 8);
-
+$color-gold: #fcc81f;
 /*====================================================
 ----------------------MIXINS------------------------
 ==================================================*/
-
 //-------POSITION/CENTERING MIXINS---------
-
 @mixin absol-center {
   position: absolute;
   top: 50%;
@@ -60,7 +81,15 @@ $color-orange-dark: rgb(214, 149, 8);
   align-items: center;
 }
 
+@mixin flex-center-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 //-------WIDTH/HEIGHT MIXINS----------
+
 @mixin keep-it-hundo {
   width: 100%;
   height: 100%;
@@ -157,9 +186,91 @@ body {
   box-sizing: border-box;
   text-align: center;
   text-transform: uppercase;
-  //font-family: $primary-font;
+  font-family: $primary-font;
+  color: $color-gold;
+  background-color: $color-dark;
 }
 
 /*=========================================================
 ---------------------------HEADER--------------------------
 =========================================================*/
+
+header {
+  width: 100vw;
+  height: 10rem;
+
+  //----------------TITLE & ICONS----------------
+
+  .header-box1 {
+    width: 100%;
+    height: 50%;
+    @include flex-center;
+    //border: 2px solid green;
+
+    .logo {
+      width: 40%;
+      height: 100%;
+      @include flex-center;
+      font-size: 2rem;
+
+      a {
+        color: $color-gold;
+        text-decoration: none;
+      }
+    }
+
+    .icons {
+      width: 60%;
+      height: 100%;
+      @include flex-center;
+
+      li {
+        width: 70%;
+        height: 100%;
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        a {
+          color: $color-gold;
+
+          i {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  //----------------MAIN NAV----------------
+
+  .header-box2 {
+    width: 100%;
+    height: 50%;
+
+    .nav-main {
+      @include keep-it-hundo;
+      background-color: $color-gold;
+
+      .ul-main {
+        @include keep-it-hundo;
+        display: flex;
+        justify-content: space-evenly;
+
+        .li-main {
+          list-style-type: none;
+          display: flex;
+          align-items: center;
+
+          .links {
+            text-decoration: none;
+            font-size: 2.2rem;
+            color: $color-dark;
+            font-family: $tertiary-font;
+          }
+        }
+      }
+    }
+  }
+}
