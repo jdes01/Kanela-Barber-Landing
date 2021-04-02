@@ -74,6 +74,10 @@ body {
 header {
   width: 100vw;
   height: 10rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 header .header-box1 {
@@ -88,6 +92,7 @@ header .header-box1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #050505;
 }
 
 header .header-box1 .logo {
@@ -143,10 +148,23 @@ header .header-box1 .icons li {
 header .header-box1 .icons li a {
   color: #a3810f;
   cursor: pointer;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 header .header-box1 .icons li a i {
   font-size: 2rem;
+}
+
+header .header-box1 .icons li a:hover {
+  transform: rotate(12deg);
+  -webkit-transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+  -ms-transform: rotate(12deg);
+  -o-transform: rotate(12deg);
 }
 
 header .header-box2 {
@@ -325,7 +343,8 @@ header .header-box2 .nav-main .ul-main .li-main .links:hover::after {
 .jumbotron .jumbo-img {
   width: 100%;
   height: 40%;
-  margin-top: 7rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
 }
 
 .jumbotron .jumbo-img img {
@@ -333,4 +352,72 @@ header .header-box2 .nav-main .ul-main .li-main .links:hover::after {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+/*=========================================================
+---------------------------MAIN----------------------------
+=========================================================*/
+main {
+  width: 100%;
+  height: auto;
+}
+
+main .sections {
+  width: 100%;
+}
+
+main .sections .section-title {
+  width: 100%;
+  height: 9rem;
+  font-family: "tw-cent", sans-serif;
+  font-size: 5rem;
+  -webkit-text-stroke: 0.2rem #a3810f;
+  -webkit-text-fill-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .cuts {
+  width: 100%;
+  height: 60rem;
+  border: 1px dotted red;
+  background-image: url(./images/profile2.png);
+  background-size: 80% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main .gallery {
+  width: 100%;
+  height: auto;
+  background-image: url(./images/camera.png);
+  background-size: 85% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid green;
+}
+
+main .gallery .img-container {
+  width: 100%;
+  height: calc(100% - 9rem);
+}
+
+main .gallery .img-container .imgs {
+  width: 27rem;
+  height: 27rem;
+  margin: 1rem auto;
+}
+
+main .gallery .img-container .imgs img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

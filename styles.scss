@@ -198,6 +198,9 @@ body {
 header {
   width: 100vw;
   height: 10rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 
   //----------------TITLE & ICONS----------------
 
@@ -205,6 +208,7 @@ header {
     width: 100%;
     height: 50%;
     @include flex-center;
+    background-color: $color-dark;
     //border: 2px solid green;
 
     .logo {
@@ -236,9 +240,18 @@ header {
         a {
           color: $color-gold;
           cursor: pointer;
+          @include transit3;
 
           i {
             font-size: 2rem;
+          }
+
+          &:hover {
+            transform: rotate(12deg);
+            -webkit-transform: rotate(12deg);
+            -moz-transform: rotate(12deg);
+            -ms-transform: rotate(12deg);
+            -o-transform: rotate(12deg);
           }
         }
       }
@@ -373,11 +386,73 @@ header {
   .jumbo-img {
     width: 100%;
     height: 40%;
-    margin-top: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
 
     img {
       @include keep-it-hundo;
       object-fit: contain;
+    }
+  }
+}
+
+/*=========================================================
+---------------------------MAIN----------------------------
+=========================================================*/
+
+main {
+  width: 100%;
+  height: auto;
+  //border: 1px solid green;
+
+  .sections {
+    width: 100%;
+
+    .section-title {
+      width: 100%;
+      height: 9rem;
+      font-family: $secondary-font;
+      font-size: 5rem;
+      -webkit-text-stroke: 0.2rem $color-gold;
+      -webkit-text-fill-color: transparent;
+      @include flex-center;
+    }
+  }
+
+  .cuts {
+    width: 100%;
+    height: 60rem;
+    border: 1px dotted red;
+    background-image: url(./images/profile2.png);
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .gallery {
+    width: 100%;
+    height: auto;
+    background-image: url(./images/camera.png);
+    background-size: 85% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid green;
+
+    .img-container {
+      width: 100%;
+      height: calc(100% - 9rem);
+      //border: 1px solid red;
+
+      .imgs {
+        width: 27rem;
+        height: 27rem;
+        margin: 1rem auto;
+
+        img {
+          @include keep-it-hundo;
+          object-fit: cover;
+        }
+      }
     }
   }
 }
