@@ -108,6 +108,7 @@ header .header-box1 .logo {
 header .header-box1 .logo a {
   color: #a3810f;
   text-decoration: none;
+  cursor: pointer;
 }
 
 header .header-box1 .icons {
@@ -141,6 +142,7 @@ header .header-box1 .icons li {
 
 header .header-box1 .icons li a {
   color: #a3810f;
+  cursor: pointer;
 }
 
 header .header-box1 .icons li a i {
@@ -156,6 +158,11 @@ header .header-box2 .nav-main {
   width: 100%;
   height: 100%;
   background-color: #a3810f;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
 }
 
 header .header-box2 .nav-main .ul-main {
@@ -180,10 +187,31 @@ header .header-box2 .nav-main .ul-main .li-main {
 }
 
 header .header-box2 .nav-main .ul-main .li-main .links {
+  position: relative;
   text-decoration: none;
   font-size: 2.2rem;
   color: #050505;
   font-family: "agency-bold", sans-serif;
+  cursor: pointer;
+}
+
+header .header-box2 .nav-main .ul-main .li-main .links::after {
+  content: "";
+  width: 0;
+  height: 0.3rem;
+  background-color: #050505;
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+}
+
+header .header-box2 .nav-main .ul-main .li-main .links:hover::after {
+  width: 100%;
 }
 
 /*=========================================================
@@ -192,10 +220,23 @@ header .header-box2 .nav-main .ul-main .li-main .links {
 .jumbotron {
   width: 100vw;
   height: calc(100vh - 10rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .jumbotron .jumbo-title {
-  margin-top: 7rem;
+  margin-top: 6rem;
   font-family: "tw-cent", sans-serif;
   font-size: 2.75rem;
 }
@@ -242,18 +283,49 @@ header .header-box2 .nav-main .ul-main .li-main .links {
 }
 
 .jumbotron .jumbo-cta .cta-btn {
+  position: relative;
   text-decoration: none;
   font-family: "agency-bold", sans-serif;
   font-size: 3rem;
   color: #a3810f;
   border: 0.2rem solid #a3810f;
   padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.jumbotron .jumbo-cta .cta-btn::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background-color: #a3810f;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  z-index: -2;
+}
+
+.jumbotron .jumbo-cta .cta-btn:hover::after {
+  width: 100%;
+}
+
+.jumbotron .jumbo-cta .cta-btn:hover {
+  color: #050505;
 }
 
 .jumbotron .jumbo-img {
   width: 100%;
-  height: 45%;
-  margin-top: 3rem;
+  height: 40%;
+  margin-top: 7rem;
 }
 
 .jumbotron .jumbo-img img {
