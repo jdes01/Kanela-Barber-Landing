@@ -16,6 +16,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
+    <!----------SWIPER.JS CDN----------->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-----------------START OF HEADER-------------------->
@@ -71,7 +76,8 @@
         <a href="#" class="cta-btn">let's fade</a>
       </div>
       <div class="jumbo-img">
-        <img src="./images/profile1.png" alt="man with haircut" />
+        <!--<img src="./images/profile1.png" alt="man with haircut" />-->
+        <img src="./images/giphy.gif" alt="" />
       </div>
     </div>
 
@@ -80,6 +86,35 @@
       <hr />
       <section class="sections cuts">
         <div class="section-title"><h3>cuts</h3></div>
+        <div class="cuts-info">
+          <p class="cuts-p">
+            Choose from different style cuts, fades and shaves!
+          </p>
+        </div>
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./images/profile3.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/profile3.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/profile3.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/profile3.png" alt="" />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </section>
       <hr />
       <section class="sections gallery">
@@ -118,7 +153,7 @@
         </div>
         <div class="locate-container">
           <p class="locate">
-            Get your cut then shop and eat! Located in the Mount Prospect with
+            Get your cut then shop and eat! Located in Mount Prospect with
             neighboring areas of Schaumburg, Rosemont, Des Plaines, O'hare and
             I90 Highway for convenience!
           </p>
@@ -133,6 +168,28 @@
     </main>
     <hr />
     <footer>© bien chido cuts 2021. designed and updated by dee chao</footer>
-    <script src="" async defer></script>
+    <!----------SWIPER JS INIT---------->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 1,
+        spacesBetween: 30,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
