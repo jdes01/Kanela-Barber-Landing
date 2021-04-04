@@ -605,6 +605,12 @@ main .cuts {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  main .cuts {
+    background-size: 45% auto;
+  }
+}
+
 main .cuts .cuts-info {
   width: 100%;
   height: auto;
@@ -710,9 +716,15 @@ main .gallery {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  main .gallery {
+    background-size: 65% auto;
+  }
+}
+
 main .gallery .img-container {
   width: 100%;
-  height: calc(100% - 9rem);
+  height: auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -749,6 +761,13 @@ main .gallery .img-container .imgs {
 @media only screen and (min-width: 768px) {
   main .gallery .img-container .imgs {
     margin: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main .gallery .img-container .imgs {
+    width: 20rem;
+    height: 20rem;
   }
 }
 
@@ -792,6 +811,12 @@ main .contact {
   main .contact {
     height: 65rem;
     background-size: 70%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main .contact {
+    background-size: 55% auto;
   }
 }
 
@@ -902,6 +927,13 @@ main .location {
   main .location {
     height: 65rem;
     background-size: 40% auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main .location {
+    height: 70rem;
+    background-size: 35% auto;
   }
 }
 

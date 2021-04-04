@@ -698,6 +698,10 @@ main {
       }
     }
 
+    @include tabletLandscape {
+      background-size: 45% auto;
+    }
+
     .cuts-info {
       width: 100%;
       height: auto;
@@ -809,9 +813,15 @@ main {
       }
     }
 
+    @include tabletLandscape {
+      & {
+        background-size: 65% auto;
+      }
+    }
+
     .img-container {
       width: 100%;
-      height: calc(100% - 9rem);
+      height: auto;
 
       @include tabletPortrait {
         & {
@@ -839,6 +849,13 @@ main {
         @include tabletPortrait {
           & {
             margin: 2rem;
+          }
+        }
+
+        @include tabletLandscape {
+          & {
+            width: 20rem;
+            height: 20rem;
           }
         }
 
@@ -881,6 +898,12 @@ main {
       & {
         height: 65rem;
         background-size: 70%;
+      }
+    }
+
+    @include tabletLandscape {
+      & {
+        background-size: 55% auto;
       }
     }
 
@@ -966,6 +989,13 @@ main {
       & {
         height: 65rem;
         background-size: 40% auto;
+      }
+    }
+
+    @include tabletLandscape {
+      & {
+        height: 70rem;
+        background-size: 35% auto;
       }
     }
 
