@@ -148,6 +148,12 @@ header .header-box1 .logo {
   }
 }
 
+@media only screen and (min-width: 1224px) {
+  header .header-box1 .logo {
+    font-size: 3rem;
+  }
+}
+
 header .header-box1 .logo a {
   color: #a58620;
   text-decoration: none;
@@ -206,6 +212,12 @@ header .header-box1 .icons li a i {
 @media only screen and (min-width: 768px) {
   header .header-box1 .icons li a i {
     font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  header .header-box1 .icons li a i {
+    font-size: 3rem;
   }
 }
 
@@ -296,6 +308,12 @@ header .header-box2 .nav-main .ul-main .li-main .links {
     color: #a58620;
     font-size: 2.2rem;
     font-family: "agency-reg", sans-serif;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  header .header-box2 .nav-main .ul-main .li-main .links {
+    font-size: 3rem;
   }
 }
 
@@ -578,6 +596,12 @@ main .sections .section-title {
   }
 }
 
+@media only screen and (min-width: 1224px) {
+  main .sections .section-title {
+    font-size: 8rem;
+  }
+}
+
 main .cuts {
   width: 100%;
   height: 50rem;
@@ -608,6 +632,12 @@ main .cuts {
 @media only screen and (min-width: 1024px) {
   main .cuts {
     background-size: 45% auto;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  main .cuts {
+    height: 80rem;
   }
 }
 
@@ -744,6 +774,12 @@ main .gallery .img-container {
   }
 }
 
+@media only screen and (min-width: 1224px) {
+  main .gallery .img-container {
+    margin: 7rem auto;
+  }
+}
+
 main .gallery .img-container .imgs {
   width: 27rem;
   height: 27rem;
@@ -768,6 +804,13 @@ main .gallery .img-container .imgs {
   main .gallery .img-container .imgs {
     width: 20rem;
     height: 20rem;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  main .gallery .img-container .imgs {
+    width: 25rem;
+    height: 25rem;
   }
 }
 
@@ -820,6 +863,13 @@ main .contact {
   }
 }
 
+@media only screen and (min-width: 1224px) {
+  main .contact {
+    height: 70rem;
+    background-size: 50%;
+  }
+}
+
 main .contact .info-container {
   width: 100%;
   height: 35rem;
@@ -839,6 +889,12 @@ main .contact .info-container {
 @media only screen and (min-width: 768px) {
   main .contact .info-container {
     height: 45rem;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  main .contact .info-container {
+    padding: 7rem;
   }
 }
 
@@ -937,6 +993,13 @@ main .location {
   }
 }
 
+@media only screen and (min-width: 1224px) {
+  main .location {
+    height: 80rem;
+    background-size: 33%;
+  }
+}
+
 main .location .locate-container {
   width: 100%;
   height: calc(100% - 9rem);
@@ -951,6 +1014,12 @@ main .location .locate-container {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 1224px) {
+  main .location .locate-container {
+    padding: 7rem;
+  }
 }
 
 main .location .locate-container .locate {
@@ -1002,6 +1071,13 @@ main .location .locate-container .locate-img {
   }
 }
 
+@media only screen and (min-width: 1224px) {
+  main .location .locate-container .locate-img {
+    width: 75%;
+    height: 22rem;
+  }
+}
+
 main .location .locate-container .locate-img img {
   width: 100%;
   height: 100%;
@@ -1036,6 +1112,12 @@ hr {
   }
 }
 
+@media only screen and (min-width: 1224px) {
+  hr {
+    margin: 4rem auto;
+  }
+}
+
 /*=========================================================
 --------------------------FOOTER---------------------------
 =========================================================*/
@@ -1059,5 +1141,11 @@ footer {
 @media only screen and (min-width: 768px) {
   footer {
     font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  footer {
+    font-size: 2.2rem;
   }
 }

@@ -307,6 +307,12 @@ header {
         }
       }
 
+      @include desktop {
+        & {
+          font-size: 3rem;
+        }
+      }
+
       a {
         color: $color-gold;
         text-decoration: none;
@@ -344,6 +350,12 @@ header {
             @include tabletPortrait {
               & {
                 font-size: 2.5rem;
+              }
+            }
+
+            @include desktop {
+              & {
+                font-size: 3rem;
               }
             }
           }
@@ -419,6 +431,12 @@ header {
                 color: $color-gold;
                 font-size: 2.2rem;
                 font-family: $primary-font;
+              }
+            }
+
+            @include desktop {
+              & {
+                font-size: 3rem;
               }
             }
 
@@ -667,6 +685,12 @@ main {
           font-size: 7rem;
         }
       }
+
+      @include desktop {
+        & {
+          font-size: 8rem;
+        }
+      }
     }
   }
 
@@ -700,6 +724,12 @@ main {
 
     @include tabletLandscape {
       background-size: 45% auto;
+    }
+
+    @include desktop {
+      & {
+        height: 80rem;
+      }
     }
 
     .cuts-info {
@@ -833,6 +863,12 @@ main {
         }
       }
 
+      @include desktop {
+        & {
+          margin: 7rem auto;
+        }
+      }
+
       .imgs {
         width: 27rem;
         height: 27rem;
@@ -856,6 +892,13 @@ main {
           & {
             width: 20rem;
             height: 20rem;
+          }
+        }
+
+        @include desktop {
+          & {
+            width: 25rem;
+            height: 25rem;
           }
         }
 
@@ -907,6 +950,13 @@ main {
       }
     }
 
+    @include desktop {
+      & {
+        height: 70rem;
+        background-size: 50%;
+      }
+    }
+
     .info-container {
       width: 100%;
       height: 35rem;
@@ -918,6 +968,12 @@ main {
       @include tabletPortrait {
         & {
           height: 45rem;
+        }
+      }
+
+      @include desktop {
+        & {
+          padding: 7rem;
         }
       }
 
@@ -999,6 +1055,13 @@ main {
       }
     }
 
+    @include desktop {
+      & {
+        height: 80rem;
+        background-size: 33%;
+      }
+    }
+
     .locate-container {
       width: 100%;
       height: calc(100% - 9rem);
@@ -1006,6 +1069,12 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+
+      @include desktop {
+        & {
+          padding: 7rem;
+        }
+      }
 
       .locate {
         width: 100%;
@@ -1047,6 +1116,13 @@ main {
           }
         }
 
+        @include desktop {
+          & {
+            width: 75%;
+            height: 22rem;
+          }
+        }
+
         img {
           @include keep-it-hundo;
           object-fit: cover;
@@ -1079,6 +1155,12 @@ hr {
       margin: 3rem auto;
     }
   }
+
+  @include desktop {
+    & {
+      margin: 4rem auto;
+    }
+  }
 }
 
 /*=========================================================
@@ -1096,6 +1178,12 @@ footer {
   @include tabletPortrait {
     & {
       font-size: 2rem;
+    }
+  }
+
+  @include desktop {
+    & {
+      font-size: 2.2rem;
     }
   }
 }
