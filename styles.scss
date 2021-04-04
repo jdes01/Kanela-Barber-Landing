@@ -264,6 +264,13 @@ header {
   top: 0;
   z-index: 10;
 
+  @include tabletLandscape {
+    & {
+      display: flex;
+      height: 15rem;
+    }
+  }
+
   //----------------TITLE & ICONS----------------
 
   .header-box1 {
@@ -272,17 +279,31 @@ header {
     @include flex-center;
     background-color: $color-dark;
     @include deep-shadow;
+    //border: 1px solid red;
+
+    @include tabletLandscape {
+      & {
+        justify-content: flex-start;
+      }
+    }
 
     .logo {
       width: 40%;
       height: 100%;
       @include flex-center;
       font-size: 2rem;
-      //@include deep-shadow;
 
       @include tabletPortrait {
         & {
           font-size: 2.5rem;
+        }
+      }
+
+      @include tabletLandscape {
+        & {
+          justify-content: flex-start;
+          margin-left: 4rem;
+          width: 30%;
         }
       }
 
@@ -297,7 +318,12 @@ header {
       width: 60%;
       height: 100%;
       @include flex-center;
-      //@include deep-shadow;
+
+      @include tabletLandscape {
+        & {
+          width: 45%;
+        }
+      }
 
       li {
         width: 70%;
@@ -345,28 +371,54 @@ header {
       background-color: $color-gold;
       @include transit3;
 
+      @include tabletLandscape {
+        & {
+          background-color: $color-dark;
+        }
+      }
+
       .ul-main {
         @include keep-it-hundo;
         display: flex;
         justify-content: space-evenly;
         @include deep-shadow;
 
+        @include tabletLandscape {
+          & {
+            justify-content: flex-end;
+          }
+        }
+
         .li-main {
           list-style-type: none;
           display: flex;
           align-items: center;
+
+          @include tabletLandscape {
+            & {
+              margin-right: 4rem;
+            }
+          }
 
           .links {
             position: relative;
             text-decoration: none;
             font-size: 2.2rem;
             color: $color-dark;
-            font-family: $tertiary-font;
             cursor: pointer;
+            font-family: $tertiary-font;
 
             @include tabletPortrait {
               & {
                 font-size: 2.75rem;
+              }
+            }
+
+            @include tabletLandscape {
+              & {
+                color: $color-gold;
+                font-size: 2.2rem;
+                font-family: $primary-font;
               }
             }
 
@@ -383,6 +435,13 @@ header {
               @include tabletPortrait {
                 & {
                   bottom: -2%;
+                }
+              }
+
+              @include tabletLandscape {
+                & {
+                  background-color: $color-gold;
+                  bottom: -15%;
                 }
               }
             }
@@ -408,6 +467,12 @@ header {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+
+  @include tabletLandscape {
+    & {
+      height: calc(100vh - 15rem);
+    }
+  }
 
   .jumbo-title {
     margin-top: 6rem;
@@ -485,6 +550,12 @@ header {
     margin-top: 3rem;
     @include flex-center;
 
+    @include tabletLandscape {
+      & {
+        margin-top: 4rem;
+      }
+    }
+
     .cta-btn {
       position: relative;
       text-decoration: none;
@@ -494,11 +565,19 @@ header {
       border: 0.2rem solid $color-gold;
       padding: 1rem 2.5rem;
       cursor: pointer;
+      overflow: hidden;
       //@include transit3;
 
       @include tabletPortrait {
         & {
           font-size: 4rem;
+        }
+      }
+
+      @include tabletLandscape {
+        & {
+          padding: 1rem 3rem;
+          font-size: 4.2rem;
         }
       }
 
@@ -510,6 +589,12 @@ header {
         background-color: $color-gold;
         @include transit3;
         z-index: -2;
+
+        @include tabletLandscape {
+          & {
+            height: 200%;
+          }
+        }
       }
 
       &:hover::after {

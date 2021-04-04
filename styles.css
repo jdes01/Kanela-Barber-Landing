@@ -83,6 +83,15 @@ header {
   z-index: 10;
 }
 
+@media only screen and (min-width: 1024px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 15rem;
+  }
+}
+
 header .header-box1 {
   width: 100%;
   height: 50%;
@@ -98,6 +107,14 @@ header .header-box1 {
   background-color: #050505;
   -webkit-box-shadow: 0.3rem 0.3rem 1rem #050505;
           box-shadow: 0.3rem 0.3rem 1rem #050505;
+}
+
+@media only screen and (min-width: 1024px) {
+  header .header-box1 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 header .header-box1 .logo {
@@ -121,6 +138,16 @@ header .header-box1 .logo {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  header .header-box1 .logo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 4rem;
+    width: 30%;
+  }
+}
+
 header .header-box1 .logo a {
   color: #a58620;
   text-decoration: none;
@@ -139,6 +166,12 @@ header .header-box1 .icons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  header .header-box1 .icons {
+    width: 45%;
+  }
 }
 
 header .header-box1 .icons li {
@@ -200,6 +233,12 @@ header .header-box2 .nav-main {
   -o-transition: 0.3s ease;
 }
 
+@media only screen and (min-width: 1024px) {
+  header .header-box2 .nav-main {
+    background-color: #050505;
+  }
+}
+
 header .header-box2 .nav-main .ul-main {
   width: 100%;
   height: 100%;
@@ -213,6 +252,14 @@ header .header-box2 .nav-main .ul-main {
           box-shadow: 0.3rem 0.3rem 1rem #050505;
 }
 
+@media only screen and (min-width: 1024px) {
+  header .header-box2 .nav-main .ul-main {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 header .header-box2 .nav-main .ul-main .li-main {
   list-style-type: none;
   display: -webkit-box;
@@ -223,18 +270,32 @@ header .header-box2 .nav-main .ul-main .li-main {
           align-items: center;
 }
 
+@media only screen and (min-width: 1024px) {
+  header .header-box2 .nav-main .ul-main .li-main {
+    margin-right: 4rem;
+  }
+}
+
 header .header-box2 .nav-main .ul-main .li-main .links {
   position: relative;
   text-decoration: none;
   font-size: 2.2rem;
   color: #050505;
-  font-family: "agency-bold", sans-serif;
   cursor: pointer;
+  font-family: "agency-bold", sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
   header .header-box2 .nav-main .ul-main .li-main .links {
     font-size: 2.75rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header .header-box2 .nav-main .ul-main .li-main .links {
+    color: #a58620;
+    font-size: 2.2rem;
+    font-family: "agency-reg", sans-serif;
   }
 }
 
@@ -256,6 +317,13 @@ header .header-box2 .nav-main .ul-main .li-main .links::after {
 @media only screen and (min-width: 768px) {
   header .header-box2 .nav-main .ul-main .li-main .links::after {
     bottom: -2%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header .header-box2 .nav-main .ul-main .li-main .links::after {
+    background-color: #a58620;
+    bottom: -15%;
   }
 }
 
@@ -282,6 +350,12 @@ header .header-box2 .nav-main .ul-main .li-main .links:hover::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .jumbotron {
+    height: calc(100vh - 15rem);
+  }
 }
 
 .jumbotron .jumbo-title {
@@ -373,6 +447,12 @@ header .header-box2 .nav-main .ul-main .li-main .links:hover::after {
           align-items: center;
 }
 
+@media only screen and (min-width: 1024px) {
+  .jumbotron .jumbo-cta {
+    margin-top: 4rem;
+  }
+}
+
 .jumbotron .jumbo-cta .cta-btn {
   position: relative;
   text-decoration: none;
@@ -382,11 +462,19 @@ header .header-box2 .nav-main .ul-main .li-main .links:hover::after {
   border: 0.2rem solid #a58620;
   padding: 1rem 2.5rem;
   cursor: pointer;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
   .jumbotron .jumbo-cta .cta-btn {
     font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .jumbotron .jumbo-cta .cta-btn {
+    padding: 1rem 3rem;
+    font-size: 4.2rem;
   }
 }
 
@@ -409,6 +497,12 @@ header .header-box2 .nav-main .ul-main .li-main .links:hover::after {
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   z-index: -2;
+}
+
+@media only screen and (min-width: 1024px) {
+  .jumbotron .jumbo-cta .cta-btn::after {
+    height: 200%;
+  }
 }
 
 .jumbotron .jumbo-cta .cta-btn:hover::after {
