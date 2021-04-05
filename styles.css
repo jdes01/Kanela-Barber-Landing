@@ -707,7 +707,7 @@ header .header-box2 .nav-main .ul-main .li-main .links:hover::after {
 }
 
 .jumbotron .jumbo-cta .cta-btn:hover::after {
-  width: 100%;
+  width: 200%;
 }
 
 .jumbotron .jumbo-cta .cta-btn:hover {
