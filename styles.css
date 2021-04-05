@@ -91,7 +91,13 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 12rem;
+    height: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  header {
+    height: 8rem;
   }
 }
 
@@ -114,15 +120,10 @@ header .header-box1 {
 
 @media only screen and (min-width: 1024px) {
   header .header-box1 {
+    height: 100%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-  }
-}
-
-@media only screen and (min-width: 1824px) {
-  header .header-box1 {
-    margin-top: 2rem;
   }
 }
 
@@ -355,6 +356,12 @@ header .header-box2 {
   height: 50%;
 }
 
+@media only screen and (min-width: 1024px) {
+  header .header-box2 {
+    height: 100%;
+  }
+}
+
 header .header-box2 .nav-main {
   width: 100%;
   height: 100%;
@@ -369,12 +376,6 @@ header .header-box2 .nav-main {
 @media only screen and (min-width: 1024px) {
   header .header-box2 .nav-main {
     background-color: #050505;
-  }
-}
-
-@media only screen and (min-width: 1824px) {
-  header .header-box2 .nav-main {
-    margin-top: 2rem;
   }
 }
 
@@ -904,9 +905,35 @@ main .cuts .swiper-container {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  main .cuts .swiper-container {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  main .cuts .swiper-container {
+    height: 40rem;
+  }
+}
+
 @media only screen and (min-width: 1824px) {
   main .cuts .swiper-container {
+    width: 65%;
     height: 50rem;
+  }
+}
+
+@media only screen and (min-width: 2559px) {
+  main .cuts .swiper-container {
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 3439px) {
+  main .cuts .swiper-container {
+    width: 45%;
+    height: 55rem;
   }
 }
 
@@ -919,6 +946,12 @@ main .cuts .swiper-container .swiper-wrapper .swiper-slide {
   width: 100%;
   background-color: #a58620;
   position: relative;
+}
+
+@media only screen and (min-width: 1024px) {
+  main .cuts .swiper-container .swiper-wrapper .swiper-slide {
+    background-color: transparent;
+  }
 }
 
 main .cuts .swiper-container .swiper-wrapper .swiper-slide img {
@@ -936,17 +969,88 @@ main .cuts .swiper-container .swiper-wrapper .swiper-slide img {
   -o-transform: translate(-50%, -50%);
 }
 
+@media only screen and (min-width: 1024px) {
+  main .cuts .swiper-container .swiper-wrapper .swiper-slide img {
+    width: 20rem;
+    height: 20rem;
+    padding: 3rem;
+    background-color: #a58620;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  main .cuts .swiper-container .swiper-wrapper .swiper-slide img {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  main .cuts .swiper-container .swiper-wrapper .swiper-slide img {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
+@media only screen and (min-width: 3439px) {
+  main .cuts .swiper-container .swiper-wrapper .swiper-slide img {
+    width: 35rem;
+    height: 35rem;
+  }
+}
+
 main .cuts .swiper-container .swiper-button-prev {
   width: 4rem;
   height: 4rem;
-  font-size: 0.5rem;
   color: #faf5f5;
+}
+
+main .cuts .swiper-container .swiper-button-prev::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background-image: url(./images/prev.png);
+  background-size: contain;
+  background-position: center;
+  z-index: 1;
 }
 
 main .cuts .swiper-container .swiper-button-next {
   width: 4rem;
   height: 4rem;
   color: #faf5f5;
+}
+
+main .cuts .swiper-container .swiper-button-next::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background-image: url(./images/next.png);
+  background-size: contain;
+  background-position: center;
+  z-index: 1;
+}
+
+main .cuts .swiper-container .swiper-pagination-bullet {
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.7;
 }
 
 main .cuts .swiper-container .swiper-pagination-bullet-active {
