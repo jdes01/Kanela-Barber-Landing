@@ -81,6 +81,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+  background-color: #050505;
+  -webkit-box-shadow: 0.3rem 0.3rem 1rem #050505;
+          box-shadow: 0.3rem 0.3rem 1rem #050505;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -88,7 +91,7 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 15rem;
+    height: 12rem;
   }
 }
 
@@ -114,6 +117,12 @@ header .header-box1 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  header .header-box1 {
+    margin-top: 2rem;
   }
 }
 
@@ -151,6 +160,14 @@ header .header-box1 .logo {
 @media only screen and (min-width: 1224px) {
   header .header-box1 .logo {
     font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  header .header-box1 .logo {
+    font-size: 4rem;
+    margin-left: 6rem;
+    width: 25%;
   }
 }
 
@@ -221,6 +238,12 @@ header .header-box1 .icons li a i {
   }
 }
 
+@media only screen and (min-width: 1824px) {
+  header .header-box1 .icons li a i {
+    font-size: 4rem;
+  }
+}
+
 header .header-box1 .icons li a:hover {
   transform: rotate(12deg);
   -webkit-transform: rotate(12deg);
@@ -248,6 +271,12 @@ header .header-box2 .nav-main {
 @media only screen and (min-width: 1024px) {
   header .header-box2 .nav-main {
     background-color: #050505;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  header .header-box2 .nav-main {
+    margin-top: 2rem;
   }
 }
 
@@ -288,6 +317,12 @@ header .header-box2 .nav-main .ul-main .li-main {
   }
 }
 
+@media only screen and (min-width: 1824px) {
+  header .header-box2 .nav-main .ul-main .li-main {
+    margin-right: 6rem;
+  }
+}
+
 header .header-box2 .nav-main .ul-main .li-main .links {
   position: relative;
   text-decoration: none;
@@ -314,6 +349,12 @@ header .header-box2 .nav-main .ul-main .li-main .links {
 @media only screen and (min-width: 1224px) {
   header .header-box2 .nav-main .ul-main .li-main .links {
     font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  header .header-box2 .nav-main .ul-main .li-main .links {
+    font-size: 4rem;
   }
 }
 
@@ -372,7 +413,7 @@ header .header-box2 .nav-main .ul-main .li-main .links:hover::after {
 
 @media only screen and (min-width: 1024px) {
   .jumbotron {
-    height: calc(100vh - 15rem);
+    height: calc(100vh - 12rem);
   }
 }
 
@@ -391,6 +432,18 @@ header .header-box2 .nav-main .ul-main .li-main .links:hover::after {
 @media only screen and (min-width: 768px) {
   .jumbotron .jumbo-title {
     font-size: 4.5rem;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  .jumbotron .jumbo-title {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  .jumbotron .jumbo-title {
+    font-size: 7rem;
   }
 }
 
@@ -450,6 +503,18 @@ header .header-box2 .nav-main .ul-main .li-main .links:hover::after {
   }
 }
 
+@media only screen and (min-width: 1224px) {
+  .jumbotron .jumbo-subtitle h2 {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  .jumbotron .jumbo-subtitle h2 {
+    font-size: 8rem;
+  }
+}
+
 .jumbotron .jumbo-cta {
   width: 100%;
   height: 8rem;
@@ -493,6 +558,13 @@ header .header-box2 .nav-main .ul-main .li-main .links:hover::after {
   .jumbotron .jumbo-cta .cta-btn {
     padding: 1rem 3rem;
     font-size: 4.2rem;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  .jumbotron .jumbo-cta .cta-btn {
+    font-size: 4.5rem;
+    padding: 1.2rem 3.5rem;
   }
 }
 
@@ -599,6 +671,13 @@ main .sections .section-title {
 @media only screen and (min-width: 1224px) {
   main .sections .section-title {
     font-size: 8rem;
+    -webkit-text-stroke: 0.27rem #a58620;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  main .sections .section-title {
+    font-size: 9rem;
   }
 }
 
@@ -641,6 +720,13 @@ main .cuts {
   }
 }
 
+@media only screen and (min-width: 1824px) {
+  main .cuts {
+    height: 100rem;
+    background-size: 35%;
+  }
+}
+
 main .cuts .cuts-info {
   width: 100%;
   height: auto;
@@ -670,6 +756,13 @@ main .cuts .cuts-info .cuts-p {
   }
 }
 
+@media only screen and (min-width: 1824px) {
+  main .cuts .cuts-info .cuts-p {
+    margin-top: 5rem;
+    font-size: 4rem;
+  }
+}
+
 main .cuts .swiper-container {
   width: 85%;
   height: 25rem;
@@ -685,6 +778,12 @@ main .cuts .swiper-container {
 @media only screen and (min-width: 768px) {
   main .cuts .swiper-container {
     height: 35rem;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  main .cuts .swiper-container {
+    height: 50rem;
   }
 }
 
@@ -752,6 +851,13 @@ main .gallery {
   }
 }
 
+@media only screen and (min-width: 1824px) {
+  main .gallery {
+    background-size: 55% auto;
+    background-position: top;
+  }
+}
+
 main .gallery .img-container {
   width: 100%;
   height: auto;
@@ -777,6 +883,12 @@ main .gallery .img-container {
 @media only screen and (min-width: 1224px) {
   main .gallery .img-container {
     margin: 7rem auto;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  main .gallery .img-container {
+    padding: 6rem 4rem;
   }
 }
 
@@ -811,6 +923,13 @@ main .gallery .img-container .imgs {
   main .gallery .img-container .imgs {
     width: 25rem;
     height: 25rem;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  main .gallery .img-container .imgs {
+    width: 35rem;
+    height: 35rem;
   }
 }
 
@@ -870,6 +989,13 @@ main .contact {
   }
 }
 
+@media only screen and (min-width: 1824px) {
+  main .contact {
+    height: 85rem;
+    background-size: 40%;
+  }
+}
+
 main .contact .info-container {
   width: 100%;
   height: 35rem;
@@ -895,6 +1021,13 @@ main .contact .info-container {
 @media only screen and (min-width: 1224px) {
   main .contact .info-container {
     padding: 7rem;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  main .contact .info-container {
+    height: 50rem;
+    padding: 7rem 20rem;
   }
 }
 
@@ -928,6 +1061,12 @@ main .contact .info-container .info {
   }
 }
 
+@media only screen and (min-width: 1824px) {
+  main .contact .info-container .info {
+    font-size: 4rem;
+  }
+}
+
 main .contact .info-container .info-btn-box {
   width: 100%;
   height: 6rem;
@@ -949,19 +1088,25 @@ main .contact .info-container .info-btn-box .info-btn {
   background-color: #a58620;
   font-family: "agency-bold", sans-serif;
   padding: 1rem 2rem;
-  transition: 0.3s ease;
-  -webkit-transition: 0.3s ease;
-  -moz-transition: 0.3s ease;
-  -ms-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
+  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
 }
 
 main .contact .info-container .info-btn-box .info-btn:hover {
-  transform: translateY(-8%);
-  -webkit-transform: translateY(-8%);
-  -moz-transform: translateY(-8%);
-  -ms-transform: translateY(-8%);
-  -o-transform: translateY(-8%);
+  transform: translateY(8%);
+  -webkit-transform: translateY(8%);
+  -moz-transform: translateY(8%);
+  -ms-transform: translateY(8%);
+  -o-transform: translateY(8%);
+}
+
+@media only screen and (min-width: 1824px) {
+  main .contact .info-container .info-btn-box .info-btn {
+    font-size: 4rem;
+  }
 }
 
 main .location {
@@ -1000,6 +1145,13 @@ main .location {
   }
 }
 
+@media only screen and (min-width: 1824px) {
+  main .location {
+    height: 100rem;
+    background-size: 27%;
+  }
+}
+
 main .location .locate-container {
   width: 100%;
   height: calc(100% - 9rem);
@@ -1019,6 +1171,12 @@ main .location .locate-container {
 @media only screen and (min-width: 1224px) {
   main .location .locate-container {
     padding: 7rem;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  main .location .locate-container {
+    padding: 0 15rem 7rem;
   }
 }
 
@@ -1051,11 +1209,18 @@ main .location .locate-container .locate {
   }
 }
 
+@media only screen and (min-width: 1824px) {
+  main .location .locate-container .locate {
+    font-size: 4rem;
+  }
+}
+
 main .location .locate-container .locate-img {
   width: 100%;
   height: 15rem;
   border: 0.2rem dotted #a58620;
   overflow: hidden;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 620px) {
@@ -1075,6 +1240,12 @@ main .location .locate-container .locate-img {
   main .location .locate-container .locate-img {
     width: 75%;
     height: 22rem;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  main .location .locate-container .locate-img {
+    height: 27rem;
   }
 }
 
@@ -1118,6 +1289,12 @@ hr {
   }
 }
 
+@media only screen and (min-width: 1824px) {
+  hr {
+    margin: 7rem auto;
+  }
+}
+
 /*=========================================================
 --------------------------FOOTER---------------------------
 =========================================================*/
@@ -1147,5 +1324,12 @@ footer {
 @media only screen and (min-width: 1224px) {
   footer {
     font-size: 2.2rem;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  footer {
+    margin: 0 auto 4rem;
+    font-size: 3rem;
   }
 }

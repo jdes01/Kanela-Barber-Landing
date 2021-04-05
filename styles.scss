@@ -263,11 +263,14 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+  background-color: $color-dark;
+  @include deep-shadow;
+  //border: 1px solid green;
 
   @include tabletLandscape {
     & {
       display: flex;
-      height: 15rem;
+      height: 12rem;
     }
   }
 
@@ -279,11 +282,16 @@ header {
     @include flex-center;
     background-color: $color-dark;
     @include deep-shadow;
-    //border: 1px solid red;
 
     @include tabletLandscape {
       & {
         justify-content: flex-start;
+      }
+    }
+
+    @include largeDesktop {
+      & {
+        margin-top: 2rem;
       }
     }
 
@@ -310,6 +318,14 @@ header {
       @include desktop {
         & {
           font-size: 3rem;
+        }
+      }
+
+      @include largeDesktop {
+        & {
+          font-size: 4rem;
+          margin-left: 6rem;
+          width: 25%;
         }
       }
 
@@ -358,6 +374,12 @@ header {
                 font-size: 3rem;
               }
             }
+
+            @include largeDesktop {
+              & {
+                font-size: 4rem;
+              }
+            }
           }
 
           &:hover {
@@ -389,6 +411,12 @@ header {
         }
       }
 
+      @include largeDesktop {
+        & {
+          margin-top: 2rem;
+        }
+      }
+
       .ul-main {
         @include keep-it-hundo;
         display: flex;
@@ -409,6 +437,12 @@ header {
           @include tabletLandscape {
             & {
               margin-right: 4rem;
+            }
+          }
+
+          @include largeDesktop {
+            & {
+              margin-right: 6rem;
             }
           }
 
@@ -437,6 +471,12 @@ header {
             @include desktop {
               & {
                 font-size: 3rem;
+              }
+            }
+
+            @include largeDesktop {
+              & {
+                font-size: 4rem;
               }
             }
 
@@ -488,7 +528,7 @@ header {
 
   @include tabletLandscape {
     & {
-      height: calc(100vh - 15rem);
+      height: calc(100vh - 12rem);
     }
   }
 
@@ -506,6 +546,18 @@ header {
     @include tabletPortrait {
       & {
         font-size: 4.5rem;
+      }
+    }
+
+    @include desktop {
+      & {
+        font-size: 5rem;
+      }
+    }
+
+    @include largeDesktop {
+      & {
+        font-size: 7rem;
       }
     }
   }
@@ -557,6 +609,18 @@ header {
           font-size: 5.5rem;
         }
       }
+
+      @include desktop {
+        & {
+          font-size: 6rem;
+        }
+      }
+
+      @include largeDesktop {
+        & {
+          font-size: 8rem;
+        }
+      }
     }
   }
 
@@ -596,6 +660,13 @@ header {
         & {
           padding: 1rem 3rem;
           font-size: 4.2rem;
+        }
+      }
+
+      @include largeDesktop {
+        & {
+          font-size: 4.5rem;
+          padding: 1.2rem 3.5rem;
         }
       }
 
@@ -689,6 +760,13 @@ main {
       @include desktop {
         & {
           font-size: 8rem;
+          -webkit-text-stroke: 0.27rem $color-gold;
+        }
+      }
+
+      @include largeDesktop {
+        & {
+          font-size: 9rem;
         }
       }
     }
@@ -732,6 +810,13 @@ main {
       }
     }
 
+    @include largeDesktop {
+      & {
+        height: 100rem;
+        background-size: 35%;
+      }
+    }
+
     .cuts-info {
       width: 100%;
       height: auto;
@@ -758,6 +843,13 @@ main {
             font-size: 3rem;
           }
         }
+
+        @include largeDesktop {
+          & {
+            margin-top: 5rem;
+            font-size: 4rem;
+          }
+        }
       }
     }
 
@@ -775,6 +867,12 @@ main {
       @include tabletPortrait {
         & {
           height: 35rem;
+        }
+      }
+
+      @include largeDesktop {
+        & {
+          height: 50rem;
         }
       }
 
@@ -849,6 +947,13 @@ main {
       }
     }
 
+    @include largeDesktop {
+      & {
+        background-size: 55% auto;
+        background-position: top;
+      }
+    }
+
     .img-container {
       width: 100%;
       height: auto;
@@ -866,6 +971,12 @@ main {
       @include desktop {
         & {
           margin: 7rem auto;
+        }
+      }
+
+      @include largeDesktop {
+        & {
+          padding: 6rem 4rem;
         }
       }
 
@@ -902,6 +1013,13 @@ main {
           }
         }
 
+        @include largeDesktop {
+          & {
+            width: 35rem;
+            height: 35rem;
+          }
+        }
+
         img {
           @include keep-it-hundo;
           object-fit: cover;
@@ -929,7 +1047,6 @@ main {
     background-size: 85% auto;
     background-repeat: no-repeat;
     background-position: center;
-    //border: 1px solid green;
 
     @include phoneLandscape {
       & {
@@ -957,6 +1074,13 @@ main {
       }
     }
 
+    @include largeDesktop {
+      & {
+        height: 85rem;
+        background-size: 40%;
+      }
+    }
+
     .info-container {
       width: 100%;
       height: 35rem;
@@ -974,6 +1098,13 @@ main {
       @include desktop {
         & {
           padding: 7rem;
+        }
+      }
+
+      @include largeDesktop {
+        & {
+          height: 50rem;
+          padding: 7rem 20rem;
         }
       }
 
@@ -997,6 +1128,12 @@ main {
             font-size: 3rem;
           }
         }
+
+        @include largeDesktop {
+          & {
+            font-size: 4rem;
+          }
+        }
       }
 
       .info-btn-box {
@@ -1011,14 +1148,20 @@ main {
           background-color: $color-gold;
           font-family: $tertiary-font;
           padding: 1rem 2rem;
-          @include transit3;
+          @include transit2;
 
           &:hover {
-            transform: translateY(-8%);
-            -webkit-transform: translateY(-8%);
-            -moz-transform: translateY(-8%);
-            -ms-transform: translateY(-8%);
-            -o-transform: translateY(-8%);
+            transform: translateY(8%);
+            -webkit-transform: translateY(8%);
+            -moz-transform: translateY(8%);
+            -ms-transform: translateY(8%);
+            -o-transform: translateY(8%);
+          }
+
+          @include largeDesktop {
+            & {
+              font-size: 4rem;
+            }
           }
         }
       }
@@ -1062,6 +1205,13 @@ main {
       }
     }
 
+    @include largeDesktop {
+      & {
+        height: 100rem;
+        background-size: 27%;
+      }
+    }
+
     .locate-container {
       width: 100%;
       height: calc(100% - 9rem);
@@ -1073,6 +1223,12 @@ main {
       @include desktop {
         & {
           padding: 7rem;
+        }
+      }
+
+      @include largeDesktop {
+        & {
+          padding: 0 15rem 7rem;
         }
       }
 
@@ -1095,6 +1251,12 @@ main {
             font-size: 3rem;
           }
         }
+
+        @include largeDesktop {
+          & {
+            font-size: 4rem;
+          }
+        }
       }
 
       .locate-img {
@@ -1102,6 +1264,7 @@ main {
         height: 15rem;
         border: 0.2rem dotted $color-gold;
         overflow: hidden;
+        cursor: pointer;
 
         @include phoneLandscape {
           & {
@@ -1120,6 +1283,12 @@ main {
           & {
             width: 75%;
             height: 22rem;
+          }
+        }
+
+        @include largeDesktop {
+          & {
+            height: 27rem;
           }
         }
 
@@ -1161,6 +1330,12 @@ hr {
       margin: 4rem auto;
     }
   }
+
+  @include largeDesktop {
+    & {
+      margin: 7rem auto;
+    }
+  }
 }
 
 /*=========================================================
@@ -1184,6 +1359,13 @@ footer {
   @include desktop {
     & {
       font-size: 2.2rem;
+    }
+  }
+
+  @include largeDesktop {
+    & {
+      margin: 0 auto 4rem;
+      font-size: 3rem;
     }
   }
 }
