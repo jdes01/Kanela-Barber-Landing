@@ -178,6 +178,12 @@ header .header-box1 .logo {
   }
 }
 
+@media only screen and (min-width: 3439px) {
+  header .header-box1 .logo {
+    width: 15%;
+  }
+}
+
 header .header-box1 .logo a {
   color: #a58620;
   text-decoration: none;
@@ -213,6 +219,12 @@ header .header-box1 .icons {
 @media only screen and (min-width: 2559px) {
   header .header-box1 .icons {
     width: 35%;
+  }
+}
+
+@media only screen and (min-width: 3439px) {
+  header .header-box1 .icons {
+    width: 25%;
   }
 }
 
@@ -345,6 +357,12 @@ header .header-box2 .nav-main .ul-main .li-main {
 @media only screen and (min-width: 2559px) {
   header .header-box2 .nav-main .ul-main .li-main {
     margin-right: 8rem;
+  }
+}
+
+@media only screen and (min-width: 3439px) {
+  header .header-box2 .nav-main .ul-main .li-main {
+    margin-right: 9rem;
   }
 }
 
@@ -758,6 +776,13 @@ main .cuts {
   }
 }
 
+@media only screen and (min-width: 3439px) {
+  main .cuts {
+    height: 100rem;
+    background-size: 20%;
+  }
+}
+
 main .cuts .cuts-info {
   width: 100%;
   height: auto;
@@ -895,6 +920,12 @@ main .gallery {
   }
 }
 
+@media only screen and (min-width: 3439px) {
+  main .gallery {
+    background-size: 35%;
+  }
+}
+
 main .gallery .img-container {
   width: 100%;
   height: auto;
@@ -932,6 +963,12 @@ main .gallery .img-container {
 @media only screen and (min-width: 2559px) {
   main .gallery .img-container {
     padding: 6rem 25rem;
+  }
+}
+
+@media only screen and (min-width: 3439px) {
+  main .gallery .img-container {
+    padding: 6rem 65rem;
   }
 }
 
@@ -1053,6 +1090,13 @@ main .contact {
   }
 }
 
+@media only screen and (min-width: 3439px) {
+  main .contact {
+    height: 100rem;
+    background-size: 27%;
+  }
+}
+
 main .contact .info-container {
   width: 100%;
   height: 35rem;
@@ -1092,6 +1136,12 @@ main .contact .info-container {
   main .contact .info-container {
     height: 55rem;
     padding: 7rem 35rem;
+  }
+}
+
+@media only screen and (min-width: 3439px) {
+  main .contact .info-container {
+    padding: 7rem 55rem;
   }
 }
 
@@ -1222,6 +1272,12 @@ main .location {
   }
 }
 
+@media only screen and (min-width: 3439px) {
+  main .location {
+    background-size: 15%;
+  }
+}
+
 main .location .locate-container {
   width: 100%;
   height: calc(100% - 9rem);
@@ -1253,6 +1309,12 @@ main .location .locate-container {
 @media only screen and (min-width: 2559px) {
   main .location .locate-container {
     padding: 0 25rem 6rem;
+  }
+}
+
+@media only screen and (min-width: 3439px) {
+  main .location .locate-container {
+    padding: 0 35rem 6rem;
   }
 }
 
