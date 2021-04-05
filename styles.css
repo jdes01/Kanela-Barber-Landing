@@ -171,6 +171,13 @@ header .header-box1 .logo {
   }
 }
 
+@media only screen and (min-width: 2559px) {
+  header .header-box1 .logo {
+    margin-left: 8rem;
+    width: 18%;
+  }
+}
+
 header .header-box1 .logo a {
   color: #a58620;
   text-decoration: none;
@@ -194,6 +201,18 @@ header .header-box1 .icons {
 @media only screen and (min-width: 1024px) {
   header .header-box1 .icons {
     width: 45%;
+  }
+}
+
+@media only screen and (min-width: 2559px) {
+  header .header-box1 .icons {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 2559px) {
+  header .header-box1 .icons {
+    width: 35%;
   }
 }
 
@@ -320,6 +339,12 @@ header .header-box2 .nav-main .ul-main .li-main {
 @media only screen and (min-width: 1824px) {
   header .header-box2 .nav-main .ul-main .li-main {
     margin-right: 6rem;
+  }
+}
+
+@media only screen and (min-width: 2559px) {
+  header .header-box2 .nav-main .ul-main .li-main {
+    margin-right: 8rem;
   }
 }
 
@@ -727,6 +752,12 @@ main .cuts {
   }
 }
 
+@media only screen and (min-width: 2559px) {
+  main .cuts {
+    background-size: 25%;
+  }
+}
+
 main .cuts .cuts-info {
   width: 100%;
   height: auto;
@@ -858,6 +889,12 @@ main .gallery {
   }
 }
 
+@media only screen and (min-width: 2559px) {
+  main .gallery {
+    background-size: 45%;
+  }
+}
+
 main .gallery .img-container {
   width: 100%;
   height: auto;
@@ -889,6 +926,12 @@ main .gallery .img-container {
 @media only screen and (min-width: 1824px) {
   main .gallery .img-container {
     padding: 6rem 4rem;
+  }
+}
+
+@media only screen and (min-width: 2559px) {
+  main .gallery .img-container {
+    padding: 6rem 25rem;
   }
 }
 
@@ -930,6 +973,13 @@ main .gallery .img-container .imgs {
   main .gallery .img-container .imgs {
     width: 35rem;
     height: 35rem;
+  }
+}
+
+@media only screen and (min-width: 2559px) {
+  main .gallery .img-container .imgs {
+    width: 40rem;
+    height: 40rem;
   }
 }
 
@@ -996,6 +1046,13 @@ main .contact {
   }
 }
 
+@media only screen and (min-width: 2559px) {
+  main .contact {
+    height: 95rem;
+    background-size: 35%;
+  }
+}
+
 main .contact .info-container {
   width: 100%;
   height: 35rem;
@@ -1028,6 +1085,13 @@ main .contact .info-container {
   main .contact .info-container {
     height: 50rem;
     padding: 7rem 20rem;
+  }
+}
+
+@media only screen and (min-width: 2559px) {
+  main .contact .info-container {
+    height: 55rem;
+    padding: 7rem 35rem;
   }
 }
 
@@ -1152,6 +1216,12 @@ main .location {
   }
 }
 
+@media only screen and (min-width: 2559px) {
+  main .location {
+    background-size: 20%;
+  }
+}
+
 main .location .locate-container {
   width: 100%;
   height: calc(100% - 9rem);
@@ -1177,6 +1247,12 @@ main .location .locate-container {
 @media only screen and (min-width: 1824px) {
   main .location .locate-container {
     padding: 0 15rem 7rem;
+  }
+}
+
+@media only screen and (min-width: 2559px) {
+  main .location .locate-container {
+    padding: 0 25rem 6rem;
   }
 }
 
@@ -1246,6 +1322,12 @@ main .location .locate-container .locate-img {
 @media only screen and (min-width: 1824px) {
   main .location .locate-container .locate-img {
     height: 27rem;
+  }
+}
+
+@media only screen and (min-width: 2559px) {
+  main .location .locate-container .locate-img {
+    height: 30rem;
   }
 }
 
